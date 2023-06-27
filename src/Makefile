@@ -23,9 +23,9 @@
 
 ### Executable name
 ifeq ($(COMP),mingw)
-EXE = stockfish.exe
+EXE = phobos.exe
 else
-EXE = stockfish
+EXE = phobos
 endif
 
 ### Installation dir definitions
@@ -374,7 +374,7 @@ endif
 
 help:
 	@echo ""
-	@echo "To compile stockfish, type: "
+	@echo "To compile phobos, type: "
 	@echo ""
 	@echo "make target ARCH=arch [COMP=compiler] [COMPCXX=cxx]"
 	@echo ""
@@ -461,7 +461,7 @@ objclean:
 profileclean:
 	@rm -rf profdir
 	@rm -f bench.txt *.gcda *.gcno
-	@rm -f stockfish.profdata *.profraw
+	@rm -f phobos.profdata *.profraw
 
 default:
 	help
